@@ -1,0 +1,172 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-size: 14px;
+}
+#terror {
+	width: 1126px;
+	margin: 0 auto;
+}
+
+#year {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    margin-left: 677px;
+    position: absolute;
+    top: 230px;
+}
+#demo {
+	position: absolute;
+	background: url(../gfx/demo.jpg);
+	top: 420px;
+	width: 225px;
+	padding-left: 150px;
+	height: 500px;
+	padding-top: 286px;
+	color: #653505;
+}
+#demo a {
+	text-decoration: underline;
+	color: #653505;
+}
+#demo a:hover {
+	text-decoration: none;
+}
+#demo ul {
+	margin: 0;
+	padding: 0;
+ 	width: 180px;
+}
+#demo li {
+	list-style-type: none;
+}
+#demo li.city {
+	font-weight: bold;
+}
+#demo li.spacer {
+	margin-top: 10px;
+}
+#header {
+	height: 330px;
+	background: url(../gfx/header-2.gif) no-repeat;
+}
+#content {
+	min-height: 400px;
+	background: url(../gfx/content.jpg) repeat-y;
+	padding-left: 381px;
+	padding-right: 193px;
+	padding-top: 33px;
+}
+#content h1,
+#content h2,
+#content h3 {
+	font-size: 21px;
+	font-weight: bold;
+	color: #BA0000;
+	padding: 0;
+	margin: 0;
+}
+#content div.line {
+	width: 100%;
+	height: 1px;
+	padding: 0;
+	margin: 0;
+	background: url(../gfx/line.gif);
+}
+#footer {
+	position: relative;
+	height: 43px;
+	background: url(../gfx/footer-1.gif) no-repeat;
+	text-align: right;
+	padding-right: 160px;
+	padding-top: 300px;
+}
+#footer a {
+	color: #086804;
+	text-decoration: underline;
+	padding-left: 5px;
+}
+#footer a:hover {
+	text-decoration: none;
+}
+#terrorneindanke {
+	position: absolute;
+	width: 150px;
+	height: 147px;
+	top: 0px;
+	left: 180px;
+    display: none;
+}
+span.bold {
+	font-weight: 800;
+}
+
+ul.media,
+ul.gallery {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+ul.media li {
+	width: 265px;
+	height: 193px;
+	overflow: hidden;
+	display: inline-block;
+}
+ul.media li.first {
+	margin-right: 15px;
+}
+ul.media li.second {
+	position: relative;
+}
+
+ul.media li,
+ul.gallery li {
+	list-style-type: none;
+	cursor: pointer;
+}
+
+ul.gallery li {
+	display: inline;
+}
+
+ul.media div.next {
+	background: url("../gfx/gallery_next.png") repeat scroll 0 0 transparent;
+	display: none;
+	height: 65px;
+	top: 76px;
+	position: absolute;
+	width: 60px;
+	left: 205px;
+	z-index: 99;
+}
+
+ul.media div.prev {
+	background: url("../gfx/gallery_prev.png") repeat scroll 0 0 transparent;
+	display: none;
+	height: 65px;
+	top: 76px;
+	position: absolute;
+	width: 60px;
+	left: 0;
+	z-index: 99;
+}
+
+ul.media div.play {
+	background: url("../gfx/gallery_play.png") repeat scroll 0 0 transparent;
+	display: none;
+	height: 65px;
+	top: 76px;
+	position: absolute;
+	width: 60px;
+	left: 107px;
+	z-index: 99;
+}
+
+h4 {
+	display: inline-block;
+}
