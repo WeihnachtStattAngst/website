@@ -10,207 +10,22 @@
 <meta name="description" content="Keine Angst vor Männern mit Bärten und unbekannten Gepäckstücken!">
 <meta name="revisit-after" content="7 days">
 <meta name="robots" content="follow, index">
-<style type="text/css">
-<!--
-body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
-	font-size: 14px;
-}
-#terror {
-	width: 1126px;
-	margin: 0 auto;
-}
-#demo {
-	position: absolute;
-	background: url(gfx/demo.jpg);
-	top: 420px;
-	width: 225px;
-	padding-left: 150px;
-	height: 500px;
-	padding-top: 286px;
-	color: #653505;
-}
-#demo a {
-	text-decoration: underline;
-	color: #653505;
-}
-#demo a:hover {
-	text-decoration: none;
-}
-#demo ul {
-	margin: 0;
-	padding: 0;
-}
-#demo li {
-	list-style-type: none;
-}
-#demo li.city {
-	font-weight: bold;
-}
-#demo li.spacer {
-	margin-top: 10px;
-}
-#header {
-	height: 420px;
-	background: url(gfx/header-2.gif);
-}
-#content {
-	min-height: 400px;
-	background: url(gfx/content.jpg) repeat-y;
-	padding-left: 381px;
-	padding-right: 193px;
-	padding-top: 33px;
-}
-#content h1,
-#content h2,
-#content h3 {
-	font-size: 21px;
-	font-weight: bold;
-	color: #BA0000;
-	padding: 0;
-	margin: 0;
-}
-#content div.line {
-	width: 100%;
-	height: 1px;
-	padding: 0;
-	margin: 0;
-	background: url(gfx/line.gif);
-}
-#footer {
-	position: relative;
-	height: 43px;
-	background: url(gfx/footer-1.gif) no-repeat;
-	text-align: right;
-	padding-right: 160px;
-	padding-top: 300px;
-}
-#footer a {
-	color: #086804;
-	text-decoration: underline;
-	padding-left: 5px;
-}
-#footer a:hover {
-	text-decoration: none;
-}
-#terrorneindanke {
-	position: absolute;
-	width: 150px;
-	height: 147px;
-	top: 0px;
-	left: 180px;
-    display: none;
-}
-span.bold {
-	font-weight: 800;
-}
-
-ul.media,
-ul.gallery {
-	margin: 0;
-	padding: 0;
-	position: relative;
-}
-
-ul.media li {
-	width: 265px;
-	height: 193px;
-	overflow: hidden;
-	display: inline-block;
-}
-ul.media li.first {
-	margin-right: 15px;
-}
-ul.media li.second {
-	position: relative;
-}
-
-ul.media li,
-ul.gallery li {
-	list-style-type: none;
-	cursor: pointer;
-}
-
-ul.gallery li {
-	display: inline;
-}
-
-ul.media div.next {
-	background: url("gfx/gallery_next.png") repeat scroll 0 0 transparent;
-	display: none;
-	height: 65px;
-	top: 76px;
-	position: absolute;
-	width: 60px;
-	left: 205px;
-	z-index: 99;
-}
-
-ul.media div.prev {
-	background: url("gfx/gallery_prev.png") repeat scroll 0 0 transparent;
-	display: none;
-	height: 65px;
-	top: 76px;
-	position: absolute;
-	width: 60px;
-	left: 0;
-	z-index: 99;
-}
-
-ul.media div.play {
-	background: url("gfx/gallery_play.png") repeat scroll 0 0 transparent;
-	display: none;
-	height: 65px;
-	top: 76px;
-	position: absolute;
-	width: 60px;
-	left: 107px;
-	z-index: 99;
-}
-
-h4 {
-	display: inline-block;
-}
--->
-</style>
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/wsa.css" type="text/css">
 </head>
 <body>
 <div id="terror">
   <div id="demo">
-    <ul>
-      <li class="city spacer"><a href="https://osnabrueck.piratenpad.de/wsa">Lingen</a>, ab 11 Uhr<br>Infostand</li>
-      <li>Vor Spiele-Max</li>
-      <li class="city spacer"><a href="http://goo.gl/maps/s8Qvt">Frankfurt</a>, 13:30 Uhr<br>Demo</li>
-      <li>Zeil (Hauptwache)</li>
-      <li class="city spacer"><a href="http://piratenks.piratenpad.de/wsa-goe">G&ouml;ttingen</a>, ab 11 Uhr<br>Infostand</li>
-      <li>Am G&auml;nseliesel</li>
-      <li class="city spacer"><a href="https://piratenhannover.piratenpad.de/460">Hannover</a>, ab 11 Uhr<br>Infostand</li>
-      <li>Weltbevölkerungsuhr</li>
-      <li class="city spacer"><a href="#">Hamburg</a>, 11 bis 15 Uhr<br>
-      Infostand am 24.12.</li>
-      <li>Hauptbahnhof (Spitalerstr.)</li>
-      <li class="city spacer"><a href="https://osnabrueck.piratenpad.de/wsa">Osnabr&uuml;ck</a>, ab 11 Uhr<br>Infostand</li>
-      <li>Große Straße</li>
-      <li class="city spacer"><a href="#">Peine</a>, ab 9 Uhr<br>Infostand</li>
-      <li>Gröpern</li>
+    <ul id="demo_liste">
     </ul>
   </div>
-  <div id="header"></div>
+  <div id="header"><span id="year"></span></div>
   <div id="content">
     <h1>Aufruf zu bundesweiten Demonstrationen</h1>
     <div class="line"></div>
-    <p>Die Piratenpartei ruft f&uuml;r den <span class="bold">22.12.2012</span> unter dem Motto <span class="bold">"Mit Freude, Freiheit und Demokratie gegen Terror!"</span> zur Teilnahme an Aktionen gegen die von Politik und Medien gesch&uuml;rte Terrorhysterie auf.</p>
+    <p>Die Piratenpartei ruft auch dieses Jahr wieder unter dem Motto <span class="bold">"Mit Freude, Freiheit und Demokratie gegen Terror!"</span> zur Teilnahme an Aktionen gegen die von Politik und Medien gesch&uuml;rte Terrorhysterie auf.</p>
     <p>Als Weihnachtsmäner verkleidete <strong>&quot;Terroristen&quot;</strong> sollen auf die Gefahr aufmerksam machen, dass ganze Bevölkerungsgruppen auf Grund ihres Aussehens oder Gepäcks als <strong>&quot;verdächtig&quot;</strong> abgestempelt  werden.
     <p>Das weitergehende Motto der Aktionen lautet daher <span class="bold">"Keine Angst vor M&auml;nnern mit B&auml;rten".</span>    
-    <h2>Freude, Freiheit und Demokratie gegen Terror!</h2>
-    <div class="line"></div>
-    <p>Jetzt ist es also wieder passiert - auf dem Bonner Bahnhof wurde eine Bombe gefunden, die glücklicherweise nicht detonierte. Der Feind war schnell gefunden, islamistisch-salafistischer Terror. Die Lösung hatte Innenminister Friedrich genauso schell parat: Mehr Überwachung! Mehr Kameras! Mehr Wachleute.</p>
-    <p>Dass in Bonn trotz Kameras die Bombe platziert wurde, scheint dabei nicht zu interessieren. Stattdessen wird das Bild eines immer gewaltbereiten Islamisten oder ganz allgemein Ausländers gezeichnet, dass viele Mitbürger pauschal unter Generalverdacht stellt.</p>
-    <p>Um diese absurde, rassistische Vorgehensweise zu illustrieren, ruft der hessische Landesverband zu einer speziellen Aktion auf, “Weihnachten statt Angst”. Auch hier steht ein Migrant aus der Türkei im Mittelpunkt, ein gewisser Nikolaus aus Myrna. Dieser bärtige Fremde macht sich jedes Jahr mit einem Sack voller nicht identifizierter Pakete auf den Weg in deutsche Fußgängerzonen, oft begleitet von gewaltbereiten Mitstreitern, die mit Ruten bewaffnet sind, die Gesichter geschwärzt haben und sich “Krampus” nennen... <br>
-    </p>
     <h2>Reale Gefahr durch Terrorhysterie</h2>
     <div class="line"></div>
     <p>Bereits seit über einem Jahrzehnt versuchen die Regierenden und Behörden die eigenen Kompetenzen auf Kosten der Bürgerrechte auszuweiten und immer größere Kontrolle über die Gesellschaft zu gewinnen.Überwachung allerorten - dass diese nichts bringt, zeigen die traurigen Beispiele aus Berlin, in denen trotz laufender Kameras Menschen auf das Brutalste angegriffen wurden.</p>
@@ -222,22 +37,23 @@ h4 {
     <div class="line"></div>
     <p>Sucht man nach den Gründen für die plötzliche Terrorhysterie, erkennt man eine klare sicherheitspolitische Agenda, die in den letzten Jahren nur durch eine starke außerparlamentarische Opposition eingedämmt werden konnte. Nicht nur die Vorratsdatenspeicherung wurde vom Bundesverfassungsgericht in ihrer vorhanden<br>
     Form abgelehnt, auch das Zugangserschwerungsgesetz ist bis heute nicht zur Anwendung gekommen.</p>
-    <p>Das Durchsetzen der Agenda hat weiter hohe Priorität. Und so ist es kein Zufall, dass zur Zeit Verhandlungen der EU zum Thema Netzsperren, Vorratsdatenspeicherung und Terrorismusbekämpfung stattfinden.</p>
-    <p>Die Terrorwarnungen dienen der Legitimation einer Verschärfung der Sicherheitsgesetze.</p>
+    <p>Das Durchsetzen der Agenda hat weiter hohe Priorität. Und so ist es kein Zufall, dass sich im schwarz-roten Koalitionsvertrag ein ganz klares Bekenntnis zur Vorratsdatenspeicherung findet.</p>
     <h2>Wehrt euch jetzt!</h2>
     <div class="line"></div>
     <p>Es ist kalt, viele treibt die Sorge um was man zu Weihnachten verschenken könnte - die Vorzeichen für erfolgreiche Demos könnten besser sein.</p>
     <p>Umso wichtiger ist es zu mobilisieren und Gegenwind zur Vorbereitung tiefgreifender Einschneidungen in die Freiheitsrechte zu erzeugen!</p>
     <p>Lasst uns ein Zeichen der Integration setzen - das perfide Spiel um falsche Sicherheit und verstümmelte Freiheit darf nicht auf dem Rücken der Bevölkerung, und insbesondere nicht der ausländisch aussehenden Mitbürger, ausgetragen werden!<br>
     Soziale und wirtschaftliche Missstände in diesem Land, ja in ganz Europa, dürfen nicht unter dem Deckmantel des Kampfes gegen den Terrorismus ignoriert und unter den Teppich gekehrt werden!</p>
-    <h2>Zeigt euren Missmut auf den Demos am 22.12.2012!</h2>
+    <h2>Zeigt euren Missmut und geht mit uns auf die Straße!</h2>
     <div class="line"></div>
     <p>Verkleidet euch als Weihnachtsmänner und macht deutlich, dass Männer mit Bärten keine Gefahr sind, sondern benutzt werden, um uns weitere Rechte abzuerkennen. Keine Angst vor Männern mit Bärten!</p>
+<!--
     <h2>SocialMedia Avatar</h2>
     <div class="line"></div>
     <p>Wir haben f&uuml;r euch einen Avatar. Diesen k&ouml;nnt ihr auf Facebook, Twitter, GooglePlus oder sonst irgendwo verwenden, habt Spa&szlig; mit dem!</p>
     <p><img src="http://wiki.piratenpartei.de/wiki/images/9/9b/Socialmedia-avatar.jpg" alt="Social Media Avatar"></p>
     <br>
+-->
 	<h3>Bilder &amp; Videos aus 2010 (Frankfurt)</h3>
     <div class="line"></div>
     <ul id="frankfurt" class="media">
@@ -255,12 +71,19 @@ h4 {
     <a href="http://www.piratenpartei-hessen.de/">Piratenpartei</a> <a href="http://www.piratenpartei-hessen.de/impressum">Impressum</a> </div>
 </div>
 <!--<script type="text/javascript" src="http://piraten-mond.de/jmstvab18.js"></script>-->
+<script type="text/javascript" src="js/demos.js"></script>
 <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
 <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
 <script type="text/javascript">
 	var thumbWidth = 265;
 
 	$(document).ready(function() {
+                $("#year").html(jahr);
+		var html = "";
+		$.each(demos, function(idx, ort) {
+ 			html += '<li class="city spacer"><a href="'+ort['link']+'">'+ort['name']+' '+ort['zeit']+'</a>,<br>'+ort['ort']+'</li>';
+		});
+                $('#demo_liste').html(html);
 		$("a[rel^='prettyPhoto']").prettyPhoto();
 
 		$("ul.gallery").each(function(idx, val) {
