@@ -1,11 +1,12 @@
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
 	font-size: 14px;
+	background: url("../gfx/bg-wsa-2013-01.jpg") no-repeat center 0;
 }
 #terror {
-	width: 1126px;
+	width: 828px;
 	margin: 0 auto;
 }
 
@@ -18,20 +19,24 @@ body {
     position: absolute;
     top: 225px;
     transform: rotate(-2deg);
+    display: none;
 }
 #demo {
 	position: absolute;
-	background: url(../gfx/demo.jpg);
+	/*background: url(../gfx/demo.jpg);*/
 	top: 420px;
 	width: 225px;
-	padding-left: 150px;
+	padding-left: 0px;
 	height: 500px;
-	padding-top: 286px;
-	color: #653505;
+	padding-top: 200px;
+	color: #fff;
 }
 #demo a {
-	text-decoration: underline;
-	color: #653505;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+	font-size: 110%;
+	color: #fff;
+	text-shadow: 0.15em 0.15em #333;
 }
 #demo a:hover {
 	text-decoration: none;
@@ -52,13 +57,14 @@ body {
 }
 #header {
 	height: 330px;
-	background: url(../gfx/header-2.gif) no-repeat;
+	/*background: url(../gfx/header-2.gif) no-repeat;*/
 }
 #content {
 	min-height: 400px;
-	background: url(../gfx/content.jpg) repeat-y;
-	padding-left: 381px;
-	padding-right: 193px;
+	width: auto;
+	/*background: url(../gfx/content.jpg) repeat-y;*/
+	padding-left: 220px;
+	padding-right: 20px;
 	padding-top: 33px;
 }
 #content h1,
@@ -66,11 +72,14 @@ body {
 #content h3 {
 	font-size: 21px;
 	font-weight: bold;
-	color: #BA0000;
+	color: #ba0000;
 	padding: 0;
 	margin: 0;
+	display: block;
+	border-bottom: 2px dotted #ba0000;
 }
 #content div.line {
+	display: none;
 	width: 100%;
 	height: 1px;
 	padding: 0;
@@ -80,26 +89,27 @@ body {
 #footer {
 	position: relative;
 	height: 43px;
-	background: url(../gfx/footer-1.gif) no-repeat;
+	/*background: url(../gfx/footer-1.gif) no-repeat;*/
 	text-align: right;
-	padding-right: 160px;
-	padding-top: 300px;
+	padding-right: 20px;
+	padding-top: 20px;
 }
 #footer a {
-	color: #086804;
-	text-decoration: underline;
+	color: #ba0000;
+	text-decoration: none;
+	border-bottom: 1px dotted #ba0000;
 	padding-left: 5px;
 }
 #footer a:hover {
 	text-decoration: none;
 }
 #terrorneindanke {
+	display: none;
 	position: absolute;
 	width: 150px;
 	height: 147px;
 	top: 0px;
 	left: 180px;
-    display: none;
 }
 span.bold {
 	font-weight: 800;
@@ -170,4 +180,14 @@ ul.media div.play {
 
 h4 {
 	display: inline-block;
+}
+
+/* Mobiles & kleine Displays */
+@media screen and (max-width: 1200px) {
+	@viewport { width: device-width; zoom:1;
+	}
+	html {
+	margin: 0 0 0 70px;
+	min-width: 1000px;
+	}
 }
